@@ -1,0 +1,119 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║         📖 ARKADAŞ İÇİN KURULUM TALIMATARI                      ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+Merhaba! Sana bir API projesi gönderiyorum. İşte kurulum adımları:
+
+═══════════════════════════════════════════════════════════════════
+
+✅ ÖLÇÜM ÖNCESİ KONTROLLER:
+
+1. Node.js ve npm kurulu mu?
+   
+   Terminal aç ve çalıştır:
+   
+   node --version
+   npm --version
+   
+   Eğer hata alırsan: https://nodejs.org indir
+
+2. Dosyaları indir/kopyala
+   - ZIP dosyasını aç veya
+   - Klasörü kopyala
+
+═══════════════════════════════════════════════════════════════════
+
+🚀 KURULUM (3 ADIM):
+
+ADIM 1: Terminal aç
+  → Başlat menüsü → cmd veya PowerShell
+
+ADIM 2: Klasöre git
+  
+  cd C:\Users\[SENIN_KULLANICI_ADI]\Desktop\datalar
+  
+  (veya nerede ise oraya)
+
+ADIM 3: Kur ve başlat
+  
+  npm install
+  npm start
+
+═══════════════════════════════════════════════════════════════════
+
+✨ BIÇ AÇILACAK!
+
+  Tarayıcı otomatik açılacak veya şuna git:
+  
+  http://localhost:3000
+
+  Eğer açılmazsa tarayıcıda şu adresi yaz:
+  
+  http://localhost:3000
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 DASHBOARD'DA NELER VAR?
+
+  💬 Discord        - Verileri görüntüle
+  📧 Mail           - Ara
+  👥 Facebook       - İstatistikleri göster
+  🎮 Valorant       - Verileri ara
+  📸 Instagram      - Sayı göster
+  🎮 Epic Games     - E-mail araması yap
+  ⛏️ CraftRise       - Oyun verileri
+
+═══════════════════════════════════════════════════════════════════
+
+❓ SORULAR:
+
+"Port zaten kullanımda" hatası?
+  
+  Başka terminal aç ve çalıştır:
+  
+  $env:PORT=8080
+  npm start
+  
+  Sonra git: http://localhost:8080
+
+"npm command not found"?
+  
+  Node.js kur: https://nodejs.org
+
+"Başka port da çalışmıyor"?
+  
+  Başka pencereleri kapat ve tekrar dene
+
+═══════════════════════════════════════════════════════════════════
+
+📚 DOSYALARA BAKMA:
+
+Daha fazla bilgi için bak:
+  
+  • 00_BAŞLA_BURADAN.txt  - Hızlı başlangıç
+  • START.md              - Başlama rehberi
+  • API_DOCS.md           - API dokümantasyonu
+  • README.md             - Proje hakkında
+
+═══════════════════════════════════════════════════════════════════
+
+✅ TAMAMLANDINIZ!
+
+Sunucu çalışıyorsa başarılı! 🎉
+
+Herhangi bir sorun olursa yazınız.
+
+═══════════════════════════════════════════════════════════════════
+
+KISA ÖZETİ:
+
+  1. node --version (kontrol et)
+  2. cd [klasör yolu]
+  3. npm install
+  4. npm start
+  5. http://localhost:3000 (aç)
+  6. HAZIR! 🚀
+
+═══════════════════════════════════════════════════════════════════

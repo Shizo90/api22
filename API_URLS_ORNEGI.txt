@@ -1,0 +1,243 @@
+╔════════════════════════════════════════════════════════════════════╗
+║                                                                    ║
+║             🌐 API URL ÖRNEKLERI (Deploy Sonrası)                ║
+║                                                                    ║
+╚════════════════════════════════════════════════════════════════════╝
+
+
+🔗 BASE URL (RENDER'DA DEPLOY ETTİKTEN SONRA):
+
+https://datalar-api.onrender.com
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+📊 TÜM API ENDPOINTS:
+
+
+1. DISCORD ENDPOINTS
+─────────────────────
+
+Tüm Discord Verileri:
+https://datalar-api.onrender.com/api/discord
+
+Spesifik Discord Kaydı (ID: 0):
+https://datalar-api.onrender.com/api/discord/0
+
+Spesifik Discord Kaydı (ID: 5):
+https://datalar-api.onrender.com/api/discord/5
+
+Spesifik Discord Kaydı (ID: 100):
+https://datalar-api.onrender.com/api/discord/100
+
+
+2. MAIL ENDPOINTS
+─────────────────────
+
+Tüm Mail Verileri:
+https://datalar-api.onrender.com/api/mail
+
+Mail Araması (gmail):
+https://datalar-api.onrender.com/api/mail/search?q=gmail
+
+Mail Araması (yahoo):
+https://datalar-api.onrender.com/api/mail/search?q=yahoo
+
+Mail Araması (hotmail):
+https://datalar-api.onrender.com/api/mail/search?q=hotmail
+
+
+3. FACEBOOK ENDPOINTS
+─────────────────────
+
+Tüm Facebook Verileri:
+https://datalar-api.onrender.com/api/facebook
+
+Facebook İstatistikleri:
+https://datalar-api.onrender.com/api/facebook/stats
+
+
+4. VALORANT ENDPOINTS
+─────────────────────
+
+Tüm Valorant Verileri:
+https://datalar-api.onrender.com/api/valorant
+
+Valorant Araması (agent):
+https://datalar-api.onrender.com/api/valorant/search?q=agent
+
+Valorant Araması (map):
+https://datalar-api.onrender.com/api/valorant/search?q=map
+
+
+5. INSTAGRAM ENDPOINTS
+─────────────────────
+
+Tüm Instagram Verileri:
+https://datalar-api.onrender.com/api/instagram
+
+Instagram Kayıt Sayısı:
+https://datalar-api.onrender.com/api/instagram/count
+
+
+6. EPIC GAMES ENDPOINTS
+─────────────────────
+
+Tüm Epic Games Verileri:
+https://datalar-api.onrender.com/api/epicgames
+
+Epic Games E-mail Araması (gmail):
+https://datalar-api.onrender.com/api/epicgames/search?email=gmail
+
+Epic Games E-mail Araması (yahoo):
+https://datalar-api.onrender.com/api/epicgames/search?email=yahoo
+
+Epic Games E-mail Araması (hotmail):
+https://datalar-api.onrender.com/api/epicgames/search?email=hotmail
+
+
+7. CRAFRISE ENDPOINTS
+─────────────────────
+
+CraftRise Verileri:
+https://datalar-api.onrender.com/api/crafrise
+
+
+8. INFO ENDPOINTS
+─────────────────────
+
+API Bilgileri:
+https://datalar-api.onrender.com/api/info
+
+Dashboard:
+https://datalar-api.onrender.com/
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+🧪 TEST YAPMAK İÇİN:
+
+
+BROWSER'DA (EN KOLAY):
+────────────────────
+
+Tarayıcıya yapıştır:
+https://datalar-api.onrender.com/api/discord
+
+https://datolar-api.onrender.com/api/mail
+
+https://datalar-api.onrender.com/api/facebook/stats
+
+
+CURL KOMUTLARIyla:
+────────────────
+
+curl https://datalar-api.onrender.com/api/discord
+
+curl https://datalar-api.onrender.com/api/mail
+
+curl "https://datalar-api.onrender.com/api/mail/search?q=gmail"
+
+curl https://datalar-api.onrender.com/api/facebook/stats
+
+curl "https://datalar-api.onrender.com/api/valorant/search?q=agent"
+
+curl https://datalar-api.onrender.com/api/instagram/count
+
+curl "https://datalar-api.onrender.com/api/epicgames/search?email=gmail"
+
+curl https://datalar-api.onrender.com/api/crafrise
+
+
+JAVASCRIPT'LE:
+────────────────
+
+// Discord
+fetch('https://datalar-api.onrender.com/api/discord')
+  .then(r => r.json())
+  .then(d => console.log(d))
+
+// Mail Araması
+fetch('https://datalar-api.onrender.com/api/mail/search?q=gmail')
+  .then(r => r.json())
+  .then(d => console.log(d))
+
+// Facebook Stats
+fetch('https://datalar-api.onrender.com/api/facebook/stats')
+  .then(r => r.json())
+  .then(d => console.log(d))
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+📋 KOPYA YAPISTIR (ARKADAŞA GÖNDER):
+
+
+API BASE URL:
+https://datalar-api.onrender.com
+
+ENDPOINTS:
+
+Discord:
+  GET /api/discord
+  GET /api/discord/:id
+
+Mail:
+  GET /api/mail
+  GET /api/mail/search?q=query
+
+Facebook:
+  GET /api/facebook
+  GET /api/facebook/stats
+
+Valorant:
+  GET /api/valorant
+  GET /api/valorant/search?q=query
+
+Instagram:
+  GET /api/instagram
+  GET /api/instagram/count
+
+Epic Games:
+  GET /api/epicgames
+  GET /api/epicgames/search?email=query
+
+CraftRise:
+  GET /api/crafrise
+
+Info:
+  GET /api/info
+  GET /
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+🔐 GÜVENLIK NOTU:
+
+Not: Veri gizliliği önemlidir! Bu test URL'leridir.
+Üretim ortamında API key ve auth eklemeli!
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+⚠️ ÖNEMLİ NOTLAR:
+
+• "datalar-api" yerine kendi repo adını kullan
+• Render'da FREE plan kullan
+• 15 dakika boşluktan sonra suspend olabilir (normal)
+• Tüm veri dosyaları deploy'da da olmalı
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+✅ HAZIR!
+
+URL'i arkadaşına gönder! 🎉
+
+═══════════════════════════════════════════════════════════════════

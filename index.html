@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Source Data API Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>📊 Data API Dashboard</h1>
+            <p>Tüm Veri Kaynaklarına Erişim</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <button class="nav-btn active" data-source="home">🏠 Home</button>
+            <button class="nav-btn" data-source="discord">💬 Discord</button>
+            <button class="nav-btn" data-source="mail">📧 Mail</button>
+            <button class="nav-btn" data-source="facebook">👥 Facebook</button>
+            <button class="nav-btn" data-source="valorant">🎮 Valorant</button>
+            <button class="nav-btn" data-source="instagram">📸 Instagram</button>
+            <button class="nav-btn" data-source="epicgames">🎮 Epic Games</button>
+            <button class="nav-btn" data-source="crafrise">⛏️ CraftRise</button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Home Section -->
+            <section id="home" class="content-section active">
+                <h2>Hoş Geldiniz! 👋</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>💬 Discord</h3>
+                        <p>5000+ Kayıt</p>
+                        <button onclick="loadDiscord()" class="btn">Verileri Göster</button>
+                    </div>
+                    <div class="info-card">
+                        <h3>📧 Mail</h3>
+                        <p>10000+ Kayıt</p>
+                        <button onclick="loadMail()" class="btn">Verileri Göster</button>
+                    </div>
+                    <div class="info-card">
+                        <h3>👥 Facebook</h3>
+                        <p>20M+ Kayıt</p>
+                        <button onclick="loadFacebook()" class="btn">Verileri Göster</button>
+                    </div>
+                    <div class="info-card">
+                        <h3>🎮 Valorant</h3>
+                        <p>10000+ Kayıt</p>
+                        <button onclick="loadValorant()" class="btn">Verileri Göster</button>
+                    </div>
+                    <div class="info-card">
+                        <h3>📸 Instagram</h3>
+                        <p>17M+ Kayıt</p>
+                        <button onclick="loadInstagram()" class="btn">Verileri Göster</button>
+                    </div>
+                    <div class="info-card">
+                        <h3>🎮 Epic Games</h3>
+                        <p>150000+ Kayıt</p>
+                        <button onclick="loadEpicGames()" class="btn">Verileri Göster</button>
+                    </div>
+                    <div class="info-card">
+                        <h3>⛏️ CraftRise</h3>
+                        <p>Oyun Verileri</p>
+                        <button onclick="loadCrafrise()" class="btn">Verileri Göster</button>
+                    </div>
+                    <div class="info-card">
+                        <h3>🔗 API Info</h3>
+                        <p>Hakkında</p>
+                        <button onclick="loadApiInfo()" class="btn">Bilgi Göster</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Discord Section -->
+            <section id="discord" class="content-section">
+                <h2>💬 Discord Verileri</h2>
+                <div class="controls">
+                    <button class="btn" onclick="loadDiscord()">Tümünü Yükle</button>
+                    <input type="number" id="discordId" placeholder="Kayıt ID" min="0">
+                    <button class="btn" onclick="loadDiscordById()">Getir</button>
+                </div>
+                <div id="discordResult" class="result"></div>
+            </section>
+
+            <!-- Mail Section -->
+            <section id="mail" class="content-section">
+                <h2>📧 Mail Verileri</h2>
+                <div class="controls">
+                    <button class="btn" onclick="loadMail()">Tümünü Yükle</button>
+                    <input type="text" id="mailSearch" placeholder="Ara (email, domain, vb)">
+                    <button class="btn" onclick="searchMail()">Ara</button>
+                </div>
+                <div id="mailResult" class="result"></div>
+            </section>
+
+            <!-- Facebook Section -->
+            <section id="facebook" class="content-section">
+                <h2>👥 Facebook Verileri</h2>
+                <div class="controls">
+                    <button class="btn" onclick="loadFacebook()">Verileri Yükle</button>
+                    <button class="btn" onclick="loadFacebookStats()">İstatistikleri Göster</button>
+                </div>
+                <div id="facebookResult" class="result"></div>
+            </section>
+
+            <!-- Valorant Section -->
+            <section id="valorant" class="content-section">
+                <h2>🎮 Valorant Verileri</h2>
+                <div class="controls">
+                    <button class="btn" onclick="loadValorant()">Tümünü Yükle</button>
+                    <input type="text" id="valorantSearch" placeholder="Ara (ajan, harita, vb)">
+                    <button class="btn" onclick="searchValorant()">Ara</button>
+                </div>
+                <div id="valorantResult" class="result"></div>
+            </section>
+
+            <!-- Instagram Section -->
+            <section id="instagram" class="content-section">
+                <h2>📸 Instagram Verileri</h2>
+                <div class="controls">
+                    <button class="btn" onclick="loadInstagram()">Tümünü Yükle</button>
+                    <button class="btn" onclick="loadInstagramCount()">Kayıt Sayısı</button>
+                </div>
+                <div id="instagramResult" class="result"></div>
+            </section>
+
+            <!-- Epic Games Section -->
+            <section id="epicgames" class="content-section">
+                <h2>🎮 Epic Games Verileri</h2>
+                <div class="controls">
+                    <button class="btn" onclick="loadEpicGames()">Tümünü Yükle</button>
+                    <input type="text" id="epicSearch" placeholder="E-mail ile ara">
+                    <button class="btn" onclick="searchEpicGames()">Ara</button>
+                </div>
+                <div id="epicgamesResult" class="result"></div>
+            </section>
+
+            <!-- CraftRise Section -->
+            <section id="crafrise" class="content-section">
+                <h2>⛏️ CraftRise Verileri</h2>
+                <div class="controls">
+                    <button class="btn" onclick="loadCrafrise()">Verileri Yükle</button>
+                </div>
+                <div id="craftriseResult" class="result"></div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 Multi-Source Data API | API Server: http://localhost:3000</p>
+        </footer>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div id="loadingIndicator" class="loading-indicator">
+        <div class="spinner"></div>
+        <p>Yükleniyor...</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

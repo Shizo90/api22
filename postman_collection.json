@@ -1,0 +1,264 @@
+{
+  "info": {
+    "name": "Multi-Source Data API",
+    "version": "1.0.0",
+    "description": "API endpoints for accessing data from multiple sources",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Discord",
+      "item": [
+        {
+          "name": "List All Discord Data",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/discord",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "discord"]
+            }
+          }
+        },
+        {
+          "name": "Get Discord Record by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/discord/0",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "discord", "0"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mail",
+      "item": [
+        {
+          "name": "List All Mail Data",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/mail",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "mail"]
+            }
+          }
+        },
+        {
+          "name": "Search Mail Data",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/mail/search?q=test",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "mail", "search"],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "test"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Facebook",
+      "item": [
+        {
+          "name": "List Facebook Data",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/facebook",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "facebook"]
+            }
+          }
+        },
+        {
+          "name": "Facebook Statistics",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/facebook/stats",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "facebook", "stats"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Valorant",
+      "item": [
+        {
+          "name": "List Valorant Data",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/valorant",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "valorant"]
+            }
+          }
+        },
+        {
+          "name": "Search Valorant Data",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/valorant/search?q=test",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "valorant", "search"],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "test"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Instagram",
+      "item": [
+        {
+          "name": "List Instagram Data",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/instagram",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "instagram"]
+            }
+          }
+        },
+        {
+          "name": "Instagram Record Count",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/instagram/count",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "instagram", "count"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Epic Games",
+      "item": [
+        {
+          "name": "List Epic Games Data",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/epicgames",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "epicgames"]
+            }
+          }
+        },
+        {
+          "name": "Search Epic Games by Email",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/epicgames/search?email=gmail",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "epicgames", "search"],
+              "query": [
+                {
+                  "key": "email",
+                  "value": "gmail"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "CraftRise",
+      "item": [
+        {
+          "name": "Get CraftRise Data",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/crafrise",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "crafrise"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Root",
+      "item": [
+        {
+          "name": "API Info",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": [""]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
